@@ -1,6 +1,6 @@
-import "bootstrap/dist/css/bootstrap.min.css";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -8,20 +8,30 @@ export default function Home() {
       <h1>Pharmacist Tools</h1>
       <h2>Minor Ailments</h2>
       <ul>
-        <li>Conjunctivitis</li>
-        <li>Allergic Rhinitis</li>
-        <li>Candidial Stomatitis</li>
-        <li>Herpes Liabialis</li>
-        <li>Hemorrhoids</li>
-        <li>GERD</li>
-        <li>Dysmenorrhea</li>
-        <li>Musculosketal Sprains and Strains</li>
-        <li>Impetigo</li>
+        <Button className="mx-3 my-3">UTI (Uncomplicated)</Button>
+        <Button className="mx-3 my-3">Dematitis</Button>
+        <Button className="mx-3 my-3">Insect Bites</Button>
+        <Button className="mx-3 my-3">Conjunctivitis</Button>
+        <Button className="mx-3 my-3">Allergic Rhinitis</Button>
+        <Button className="mx-3 my-3">Impetigo</Button>
+        <Button className="mx-3 my-3">Musculosketal Sprains and Strains</Button>
+        <Button className="mx-3 my-3">Dysmenorrhea</Button>
+        <Button className="mx-3 my-3">GERD</Button>
+        <Button className="mx-3 my-3">
+          <Link href="/hemorrhoids">Hemorrhoids</Link>
+        </Button>
+        <Button className="mx-3 my-3">Cold Sores</Button>
+        <Button className="mx-3 my-3">Oral Thrush</Button>
+        <Button className="mx-3 my-3">GERD</Button>
       </ul>
-      <Button className="mx-3">UTI (Uncomplicated)</Button>
-      <Button className="mx-3">Dematitis</Button>
-      <Button className="mx-3">Insect Bites</Button>
-      <Button className="mx-3">Conjunctivitis</Button>
+      <h2>Covid-19</h2>
+      <ul>
+        <Button className="mx-3 my-3">Paxlovid Prescribing</Button>
+      </ul>
+      <h2>Pharmacist Opinion</h2>
+      <ul>
+        <Button className="mx-3 my-3">Pharmaceutical Opinion</Button>
+      </ul>
     </Container>
   );
 }
