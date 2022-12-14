@@ -30,7 +30,9 @@ export default function Home() {
       </ul>
       <h2>Pharmacist Opinion</h2>
       <ul>
-        <Button className="mx-3 my-3">Pharmaceutical Opinion</Button>
+        <Button className="mx-3 my-3">
+          <Link href="/opinion">Pharmaceutical Opinion</Link>
+        </Button>
       </ul>
     </Container>
   );
