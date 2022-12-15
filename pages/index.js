@@ -3,12 +3,15 @@ import Button from "react-bootstrap/Button";
 import Link from "next/link";
 
 export default function Home() {
+  const data = {
+    'name': "UTI"
+  }
   return (
     <Container className="my-3">
       <h1>Pharmacist Tools</h1>
       <h2>Minor Ailments</h2>
       <ul>
-        <Button className="mx-3 my-3">UTI (Uncomplicated)</Button>
+        <Button className="mx-3 my-3">Hemorrhoids</Button>
         <Button className="mx-3 my-3">Dematitis</Button>
         <Button className="mx-3 my-3">Insect Bites</Button>
         <Button className="mx-3 my-3">Conjunctivitis</Button>
@@ -18,7 +21,14 @@ export default function Home() {
         <Button className="mx-3 my-3">Dysmenorrhea</Button>
         <Button className="mx-3 my-3">GERD</Button>
         <Button className="mx-3 my-3">
-          <Link href="/hemorrhoids">Hemorrhoids</Link>
+          <Link
+            href={{
+              pathname: "/condition",
+              query: data,
+            }}
+          >
+            UTI (Uncomplicated)
+          </Link>
         </Button>
         <Button className="mx-3 my-3">Cold Sores</Button>
         <Button className="mx-3 my-3">Oral Thrush</Button>

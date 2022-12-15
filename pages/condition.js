@@ -6,11 +6,16 @@ import Symptoms from "./components/symptoms";
 import TreatmentGoals from "./components/treatmentGoals";
 import Redflags from "./components/redflags";
 import TreatmentTable from "./components/treatmentTable";
+import { useRouter } from "next/router";
 
-export default function UTI() {
+export default function Condition() {
+  const router = useRouter();
+  const query = router.query;
+  const name = query.name;
+
   return (
     <Container className="my-3">
-      <h1>UTI</h1>
+      <h1>{name}</h1>
       <PatientInfo></PatientInfo>
       <PrescriberInfo></PrescriberInfo>
       <Symptoms></Symptoms>
