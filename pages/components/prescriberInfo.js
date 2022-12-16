@@ -18,6 +18,8 @@ export default function PrescriberInfo() {
           aria-label="CPSO#"
           aria-describedby="basic-addon1"
         />
+      </InputGroup>
+      <InputGroup size="sm" className="mt-2">
         <InputGroup.Text id="basic-addon1">Phone#</InputGroup.Text>
         <Form.Control
           placeholder="000-000-0000"

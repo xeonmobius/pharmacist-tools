@@ -1,6 +1,7 @@
 import Form from "react-bootstrap/Form";
 
-export default function Redflags() {
+export default function Redflags({setButtonDisabled}) {
+  
   return (
     <>
       <h2>Reasons to Refer (Red Flags)</h2>
