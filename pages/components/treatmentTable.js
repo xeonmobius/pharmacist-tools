@@ -10,7 +10,7 @@ export default function TreatmentTable() {
     // sets the other radio button to disabled once 1 of them is clicked
     const newChecked = [false, false, false, false];
     newChecked[id] = true;
-    setChecked(newChecked)
+    setChecked(newChecked);
   };
   return (
     <>
@@ -43,7 +43,7 @@ export default function TreatmentTable() {
             inline
             type={"radio"}
             checked={checked[0]}
-            onClick={(e) => onClickedCheckbox(e.target.id)}
+            onChange={(e) => onClickedCheckbox(e.target.id)}
           />
         </Col>
         <Col>Macrobid 100mg</Col>
@@ -60,7 +60,7 @@ export default function TreatmentTable() {
             inline
             type={"radio"}
             checked={checked[1]}
-            onClick={(e) => onClickedCheckbox(e.target.id)}
+            onChange={(e) => onClickedCheckbox(e.target.id)}
           />
         </Col>
         <Col>Sulfatrim DS</Col>
@@ -77,7 +77,7 @@ export default function TreatmentTable() {
             inline
             type={"radio"}
             checked={checked[2]}
-            onClick={(e) => onClickedCheckbox(e.target.id)}
+            onChange={(e) => onClickedCheckbox(e.target.id)}
           />
         </Col>
         <Col>Trimethoprim</Col>
@@ -94,7 +94,7 @@ export default function TreatmentTable() {
             inline
             type={"radio"}
             checked={checked[3]}
-            onClick={(e) => onClickedCheckbox(e.target.id)}
+            onChange={(e) => onClickedCheckbox(e.target.id)}
           />
         </Col>
         <Col>Fosfomycin</Col>
