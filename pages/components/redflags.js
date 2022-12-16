@@ -2,15 +2,13 @@ import Form from "react-bootstrap/Form";
 const formStatus = new Array(13).fill(false);
 
 export default function Redflags({ setButtonDisabled }) {
-
   const checkedHandler = (e) => {
-    formStatus[e.target.id] = e.target.checked
+    formStatus[e.target.id] = e.target.checked;
     if (formStatus.some((el) => el === true)) {
       setButtonDisabled(true);
     } else {
       setButtonDisabled(false);
     }
-    console.log(formStatus);
   };
 
   return (
