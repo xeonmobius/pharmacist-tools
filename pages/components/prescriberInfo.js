@@ -33,11 +33,11 @@ export default function PrescriberInfo() {
           aria-describedby="basic-addon1"
         />
         <InputGroup.Text id="basic-addon1">
-          Date of Transmission
+          Address
         </InputGroup.Text>
         <Form.Control
-          placeholder="DD-MM-YYYY"
-          aria-label="Date of Transmission"
+          placeholder=""
+          aria-label=""
           aria-describedby="basic-addon1"
         />
       </InputGroup>

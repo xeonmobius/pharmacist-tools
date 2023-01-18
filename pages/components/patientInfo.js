@@ -25,6 +25,26 @@ export default function PatientInfo() {
           aria-describedby="basic-addon1"
         />
       </InputGroup>
+      <InputGroup size="sm" className="mt-2">
+        <InputGroup.Text id="basic-addon1">Phone No.</InputGroup.Text>
+        <Form.Control
+          placeholder="000-000-0000"
+          aria-label="Phone Number"
+          aria-describedby="basic-addon1"
+        />
+        <InputGroup.Text id="basic-addon1">Address</InputGroup.Text>
+        <Form.Control
+          placeholder=""
+          aria-label=""
+          aria-describedby="basic-addon1"
+        />
+        <InputGroup.Text id="basic-addon1">HC#</InputGroup.Text>
+        <Form.Control
+          placeholder=""
+          aria-label=""
+          aria-describedby="basic-addon1"
+        />
+      </InputGroup>
     </>
   );
 }

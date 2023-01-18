@@ -1,12 +1,12 @@
 import Form from "react-bootstrap/Form";
 
-export default function TreatmentGoals() {
+export default function TreatmentGoals({ treatmentGoals }) {
   return (
     <>
       <h2>Goal of Treatment</h2>
-      <Form.Check type={"checkbox"} label={"Relieve Symptoms"} />
-      <Form.Check type={"checkbox"} label={"Prevent Complications"} />
-      <Form.Check type={"checkbox"} label={"Prevent Recurrence"} />
+      {treatmentGoals.map((name, index) => (
+        <Form.Check id={index} type={"checkbox"} label={name} />
+      ))}
     </>
   );
 }

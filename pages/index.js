@@ -6,6 +6,9 @@ export default function Home() {
   const data = {
     'name': "UTI"
   }
+
+  const symptoms = ["Jesse", "Tom", "Anna"];
+
   return (
     <Container className="my-3">
       <h1>Pharmacist Tools</h1>
